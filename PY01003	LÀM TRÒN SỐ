@@ -1,0 +1,15 @@
+def lam_tron_so(n):
+    m = 10
+    while n>=m:
+        k = n%m
+        if k >= m//2:
+            n += (m-k)
+        else:
+            n -= k
+        m *=10
+    return n
+T = int(input())
+for _ in range(T):
+    n=int(input())
+    res = lam_tron_so(n)
+    print(res)
