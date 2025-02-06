@@ -1,0 +1,8 @@
+def check(s):
+    for i in range(1,len(s)):
+        if int(s[i-1])>int(s[i]): return "NO"
+    return "YES"
+T = int(input())
+for _ in range(T):
+    s = input()
+    print(check(s))
