@@ -1,0 +1,4 @@
+n = input()
+m = str(n).count('4')+str(n).count('7')
+if m == 4 or m==7: print("YES")
+else: print("NO")
