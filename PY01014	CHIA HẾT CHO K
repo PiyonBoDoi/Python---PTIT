@@ -1,0 +1,13 @@
+import math
+import queue
+def check():
+    s=input().split()
+    s = list(map(int,s))
+    if s[1] == 1 or s[1] > s[2] : return print("-1")
+    q = queue.Queue()
+    for i in range(s[1],s[2]+1,s[1]):
+        if i > s[0]: q.put(i-s[0])
+    if q.empty(): return print("-1")
+    while not q.empty():
+        print(q.get(), end =' ')
+check()
