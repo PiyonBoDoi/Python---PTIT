@@ -1,0 +1,8 @@
+def so_may_man(n):
+    m = str(n).count('4')+str(n).count('7')
+    if m == len(str(n)): print("YES")
+    else: print("NO")
+T = int(input())
+for _ in range (T):
+    n = input()
+    so_may_man(n)
