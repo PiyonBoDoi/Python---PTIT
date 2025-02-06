@@ -1,0 +1,8 @@
+import math 
+def laisuat(N, X, M):
+    t = math.log10(M/N)/math.log10(1+(X/100))
+    return math.ceil(t)
+T = int(input())
+for _ in range(T):
+    s = input().split()
+    print(laisuat(float(s[0]),float(s[1]),float(s[2])))
