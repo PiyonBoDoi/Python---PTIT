@@ -1,0 +1,16 @@
+def check(k, s):
+    if k ==0:
+        return ""
+    P = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_."
+    res =""
+    for i in s:
+        ct = (P.index(i)+k)%28
+        res += P[ct]
+    rv = res[::-1]
+    return rv
+while True:
+    line = input()
+    if line=="0": break
+    k, s = line.split()
+    k = int(k)
+    print(check(k,s))
