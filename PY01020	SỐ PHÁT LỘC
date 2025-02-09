@@ -1,0 +1,7 @@
+def check():
+    s = input()
+    if s[-2:]=="86": return "YES"
+    return "NO"
+T = int(input())
+for _ in range(T):
+    print(check())
