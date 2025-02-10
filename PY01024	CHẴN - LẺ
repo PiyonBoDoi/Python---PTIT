@@ -1,0 +1,14 @@
+def check():
+    s = input()
+    lt = list(map(int,s))
+    tong = sum(lt)
+    print(tong)
+    if tong%10!=0: return "NO"
+    for i in range(len(lt)-1):
+        if abs(lt[i]-lt[i+1])!=2:
+            return "NO"
+    return "YES"
+
+T = int(input())
+for _ in range(T):
+    print(check())
