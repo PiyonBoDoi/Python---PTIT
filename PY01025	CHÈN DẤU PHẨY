@@ -1,0 +1,4 @@
+def check():
+    s = int(input())
+    return "{:,}".format(s)
+print(check())
