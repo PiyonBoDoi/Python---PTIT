@@ -1,0 +1,12 @@
+import math
+def check():
+    line = input()
+    l , r = map(int,line.split())
+    for rp in range(l,r):
+        for i in range(rp+1,r):    
+            if math.gcd(rp,i)==1:
+                for j in range(i+1,r+1):
+                    if math.gcd(j,rp)==math.gcd(j,i)==1:
+                        print((rp, i, j))   
+check()
+
